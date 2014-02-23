@@ -142,54 +142,204 @@
       <dl class="tabs vertical" data-tab>
         <dd class="active"><a href="#panel1a">Ofrecer Curso</a></dd>
         <dd><a href="#panel2a">Notificaciones pendientes</a></dd>
-        <dd><a href="#panel3a">Cursos actuales</a></dd>
-        <dd><a href="#panel4a">Cursos finalizados</a></dd>
-        <dd><a href="#panel5a">Configuración </a></dd>
+        <dd><a href="#panel3a">Cursos en espera</a></dd>
+        <dd><a href="#panel4a">Cursos actuales</a></dd>
+        <dd><a href="#panel5a">Cursos finalizados</a></dd>
+        <dd><a href="#panel6a">Configuración </a></dd>
       </dl>
       <div class="tabs-content vertical">
         <div class="content active" id="panel1a">
+          <form>
+            <div class="row">
+              <div class="large-4 columns">
+                <label>Hora inicio
+                  <select>
+                    <option value="husker">11:30</option>
+                  </select>
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>Hora final
+                  <select>
+                    <option value="husker">13:00</option>
+                  </select>
+                </label>
+              </div>
+              <div class="large-4 columns">
+                <label>Tipo
+                  <select>
+                    <option value="husker">Principiante</option>
+                    <option value="starbuck">Intermedio</option>
+                    <option value="hotdog">Avanzado</option>
+                    <option value="hotdog">Conversación</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns text-center">
+                <a href="#" class="button expand">Crear Curso</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="content" id="panel2a">
           <table>
             <thead>
               <tr>
-                <th width="40%">Profesor</th>
-                <th width="20%">Tipo de Curso</th>
+                <th width="40%">Alumno</th>
+                <th width="20%">Tipo</th>
                 <th width="20%">Horario</th>
+                <th width="20%">Acción</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><a href="maestros/1.html">Pancho el Golpeado López</a></td>
+                <td>Pancho el Golpeado López</td>
                 <td>Principiante</td>
-                <td>10:00 - 13:00</td>
+                <td>5:00 - 6:00</td>
+                <td>
+                  <a href="#" data-dropdown="drop_1" class="button dropdown tiny">Acción</a><br>
+                  <ul id="drop_1" data-dropdown-content class="f-dropdown">
+                    <li><a href="#">Aceptar</a></li>
+                    <li><a href="#">Rechazar</a></li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <td><a href="maestros/2.html">Don Ramón Tomatón</a></td>
+                <td>Don Ramón Tomatón</td>
                 <td>Intermedio</td>
-                <td>23:00 - 24:00</td>
+                <td>10:25 - 15:00</td>
+                <td>
+                  <a href="#" data-dropdown="drop_2" class="button dropdown tiny">Acción</a><br>
+                  <ul id="drop_2" data-dropdown-content class="f-dropdown">
+                    <li><a href="#">Aceptar</a></li>
+                    <li><a href="#">Rechazar</a></li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <td><a href="maestros/3.html">Tighearnán Gafar Werner Chlodochar</a></td>
+                <td>Tighearnán Gafar Werner Chlodochar</td>
                 <td>Avanzado</td>
-                <td>1:00 - 2:00</td>
+                <td>16:50 - 20:30</td>
+                <td>
+                  <a href="#" data-dropdown="drop_2" class="button dropdown tiny">Acción</a><br>
+                  <ul id="drop_2" data-dropdown-content class="f-dropdown">
+                    <li><a href="#">Aceptar</a></li>
+                    <li><a href="#">Rechazar</a></li>
+                  </ul>
+                </td>
               </tr>
               <tr>
-                <td><a href="maestros/4.html">Pamelia Marisela Zaahira Annabella</a></td>
+                <td>Pamelia Marisela Zaahira Annabella</td>
                 <td>Conversación</td>
-                <td>10:00 - 11:00</td>
+                <td>14:00 - 15:20</td>
+                <td>
+                  <a href="#" data-dropdown="drop_3" class="button dropdown tiny">Acción</a><br>
+                  <ul id="drop_3" data-dropdown-content class="f-dropdown">
+                    <li><a href="#">Aceptar</a></li>
+                    <li><a href="#">Rechazar</a></li>
+                  </ul>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="content" id="panel2a"></div>
-        <div class="content" id="panel3a"></div>
+        <div class="content" id="panel3a">
+          <table>
+            <thead>
+              <tr>
+                <th width="40%">Tipo</th>
+                <th width="30%">Horario</th>
+                <th width="30%">Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Principiante</td>
+                <td>5:00 - 6:00</td>
+                <td>
+                  <a href="#" class="button tiny alert">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Intermedio</td>
+                <td>10:25 - 15:00</td>
+                <td>
+                  <a href="#" class="button tiny alert">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Avanzado</td>
+                <td>16:50 - 20:30</td>
+                <td>
+                  <a href="#" class="button tiny alert">Eliminar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Conversación</td>
+                <td>14:00 - 15:20</td>
+                <td>
+                  <a href="#" class="button tiny alert">Eliminar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="content" id="panel4a">
           <table>
             <thead>
               <tr>
-                <th width="40%">Profesor</th>
+                <th width="40%">Alumno</th>
+                <th width="20%">Tipo</th>
+                <th width="20%">Horario</th>
+                <th width="20%">Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pancho el Golpeado López</td>
+                <td>Principiante</td>
+                <td>5:00 - 6:00</td>
+                <td>
+                  <a href="#" class="button tiny">Calificar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Don Ramón Tomatón</td>
+                <td>Intermedio</td>
+                <td>10:25 - 15:00</td>
+                <td>
+                  <a href="#" class="button tiny">Calificar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Tighearnán Gafar Werner Chlodochar</td>
+                <td>Avanzado</td>
+                <td>16:50 - 20:30</td>
+                <td>
+                  <a href="#" class="button tiny">Calificar</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Pamelia Marisela Zaahira Annabella</td>
+                <td>Conversación</td>
+                <td>14:00 - 15:20</td>
+                <td>
+                  <a href="#" class="button tiny">Calificar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="content" id="panel5a">
+          <table>
+            <thead>
+              <tr>
+                <th width="40%">Alumno</th>
                 <th width="20%">Tipo</th>
                 <th width="20%">Calificación</th>
-                <th width="20%">Constancia</th>
+                <th width="20%">Acción</th>
               </tr>
             </thead>
             <tbody>
@@ -230,7 +380,7 @@
             </tbody>
           </table>
         </div>
-        <div class="content" id="panel5a">
+        <div class="content" id="panel6a">
           <div>
           <form>
             <div class="row">
@@ -259,6 +409,14 @@
                     <option value="hotdog">Avanzado</option>
                   </select>
                 </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-6 columns text-center">
+                <a href="#" class="button success small">Subir video</a>
+              </div>
+              <div class="large-6 columns text-center">
+                <a href="#" class="button success small">Subir constancia</a>
               </div>
             </div>
             <div class="row">

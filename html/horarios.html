@@ -15,6 +15,32 @@
   </style>
 </head>
 <body>
+  <div id="iniciarModal" class="reveal-modal" data-reveal>
+    <h2>Inicio de sesión</h2>
+    <form>
+      <div class="row">
+        <div class="large-4 columns">
+          <label>Correo
+            <input type="text" placeholder="large-4.columns" />
+          </label>
+        </div>
+        <div class="large-4 columns">
+          <label>Contraseña
+            <input type="text" placeholder="large-4.columns" />
+          </label>
+        </div>
+        <div class="large-4 columns">
+          <label>Iniciar sesión como:</label>
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Alumno</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Maestro</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="button [tiny small large]">Entrar</a>
+      </div>
+    </form>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
   <div id="myModal" class="reveal-modal" data-reveal>
     <h2>Elige el tipo de registro</h2>
     <p class="lead">Puedes elegir entre maestro y alumno</p>
@@ -122,7 +148,7 @@
         <li><a href="#">Ver Horarios</a></li>
         <li><a href="maestros.html">Ver Maestros</a></li>
         <li></br></li>
-        <li><a href="#">Iniciar Sesión</a></li>
+        <li><a href="#" data-reveal-id="iniciarModal" data-reveal>Iniciar Sesión</a></li>
         <li><a href="alumnoConf.html">Ver Cuenta(Alumno)</a></li>
         <li><a href="maestroConf.html">Ver Cuenta(Maestro)</a></li>
         <li><a href="#">Salir</a></li>

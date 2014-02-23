@@ -10,8 +10,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-  <link href="http://vjs.zencdn.net/4.4/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/4.4/video.js"></script>
   <style type="text/css">
     .vjs-default-skin .vjs-control-bar { font-size: 89% }
   </style>
@@ -29,14 +27,6 @@
       <h5>Enseña</h5>
       <p>Ofrece cursos eligiendo los horarios que quieras y a alumnos de tu agrado.</p>
       <a href="#" class="small button" data-reveal-id="registroMaestroModal" data-reveal>Enseñar</a>
-    </div>
-    <div class="flex-video">
-      <video id="my_video_1" class="video-js vjs-default-skin" controls
-       preload="auto" width="640" height="264" poster="my_video_poster.png"
-       data-setup="{}">
-       <source src="my_video.mp4" type='video/mp4'>
-       <source src="my_video.webm" type='video/webm'>
-      </video>
     </div>
     <a class="close-reveal-modal">&#215;</a>
   </div>
@@ -156,9 +146,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="small-2 large-1 columns"></div>
-    <div class="small-8 large-8 columns large-centered ">
-      <table class="tabla_gorda text-center">
+    <div class="small-12 large-12 columns">
+      <table>
         <thead>
           <tr>
             <th width="40%">Profesor</th>
@@ -169,28 +158,28 @@
         </thead>
         <tbody>
           <tr>
-            <td>Pancho el Golpeado López</td>
+            <td><a href="maestros/1.html">Pancho el Golpeado López</a></td>
             <td>Principiante</td>
             <td>10:00 - 13:00</td>
-            <td><span class="success round label">Solicitar</span></td>
+            <td><a href="#" class="button success radius tiny">Solicitar</a></td>
           </tr>
           <tr>
-            <td>Don Ramón Tomatón</td>
+            <td><a href="maestros/2.html">Don Ramón Tomatón</a></td>
             <td>Intermedio</td>
             <td>23:00 - 24:00</td>
-            <td><span class="success round label">Solicitar</span></td>
+            <td><a href="#" class="button success radius tiny">Solicitar</a></td>
           </tr>
           <tr>
-            <td>Tighearnán Gafar Werner Chlodochar</td>
+            <td><a href="maestros/3.html">Tighearnán Gafar Werner Chlodochar</a></td>
             <td>Avanzado</td>
             <td>1:00 - 2:00</td>
-            <td><span class="success round label">Solicitar</span></td>
+            <td><a href="#" class="button success radius tiny">Solicitar</a></td>
           </tr>
           <tr>
-            <td>Pamelia Marisela Zaahira Annabella</td>
+            <td><a href="maestros/4.html">Pamelia Marisela Zaahira Annabella</a></td>
             <td>Conversación</td>
             <td>10:00 - 11:00</td>
-            <td><span class="success round label">Solicitar</span></td>
+            <td><a href="#" class="button success radius tiny">Solicitar</a></td>
           </tr>
         </tbody>
       </table>

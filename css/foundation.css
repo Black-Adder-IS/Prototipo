@@ -1521,6 +1521,7 @@ button, .button {
     padding-bottom: 0.6875rem;
     padding-left: 1.25rem;
     font-size: 0.6875rem;
+    margin: auto;
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.expand, .button.expand {
     padding-right: 0;
@@ -1998,8 +1999,8 @@ div.switch {
 /* Pricing Tables */
 .pricing-table {
   border: solid 1px #dddddd;
-  margin-left: 0;
   margin-bottom: 1.25rem; }
+  margin-left: 0;
   .pricing-table * {
     list-style: none;
     line-height: 1; }
@@ -4043,7 +4044,8 @@ ul.off-canvas-list {
 
 table {
   background: white;
-  margin-bottom: 1.25rem;
+   /*margin-bottom: 1.25rem;*/
+  margin: 0 auto 1.25rem auto;
   border: solid 1px #dddddd; }
   table thead,
   table tfoot {
